@@ -1,0 +1,8 @@
+@tailwind base;
+@import "./base.css";
+
+@tailwind components;
+@import "./button/connectWallet.css";
+
+
+@tailwind utilities;

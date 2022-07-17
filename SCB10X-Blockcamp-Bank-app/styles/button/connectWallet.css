@@ -1,0 +1,25 @@
+.connect-wallet {
+  transition: all 0.25s ease;
+  background: linear-gradient(90deg, #db76ff 0%, #01A1C8 50%, #01f4b9 100%);
+  position: relative;
+  z-index: 100;
+}
+
+.connect-wallet::before {
+  background: linear-gradient(90deg, #01f4b9 0%, #01A1C8 50%, #db76ff 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  transition: opacity 1s ease;
+  border-radius: 10px;
+}
+
+.connect-wallet:hover::before {
+  opacity: 1;
+}
